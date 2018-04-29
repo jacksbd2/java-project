@@ -8,13 +8,14 @@ node('linux') {
     stage('Test') {
 
         sh "env"
-        echo "Working with build ${BUILD_NUMBER}"
+        sh "ant -f test.xml -v"
 
-
-
-
-
-
-  }
-
+    }
+    
+    stage('Build'){
+        sh "ant -f build.xml -v"
+        
+    }
+    
+    
 }
