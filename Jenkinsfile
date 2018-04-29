@@ -14,7 +14,7 @@ node('linux') {
     }
     
     stage('Deploy'){
-	    sh "cp /workspace/java-pipeline/dist/rectangle-*.jar s3://jack3604-assignment-10/*.*"
-
+	sh "cp /workspace/java-pipeline/dist/rectangle-*.jar s3://jack3604-assignment-10/*.*"
+    }
     
 }
