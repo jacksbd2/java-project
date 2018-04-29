@@ -8,6 +8,8 @@ node('linux') {
     stage('Test') {
 
         sh "env"
+        echo "Working with build ${BUILD_NUMBER}"
+
 
 
 
