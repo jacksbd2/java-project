@@ -13,5 +13,8 @@ node('linux') {
         sh "ant -f build.xml -v" 
     }
     
+    stage('Deploy'){
+	    sh "cp /workspace/java-pipeline/dist/rectangle-*.jar s3://jack3604-assignment-10/*.*"
+
     
 }
